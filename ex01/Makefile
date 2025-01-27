@@ -6,17 +6,17 @@
 #    By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/27 11:27:22 by dmusulas          #+#    #+#              #
-#    Updated: 2025/01/27 15:57:04 by dmusulas         ###   ########.fr        #
+#    Updated: 2025/01/27 16:25:05 by dmusulas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CPP             = c++
 CPPFLAGS        = -Wall -Wextra -Werror -std=c++98
-NAME            = zombie
+NAME            = horde 
 MAKE            = make
 RM              = rm -rf
 
-SRCS            = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+SRCS            = Zombie.cpp main.cpp zombieHorde.cpp
 
 OBJS            = $(SRCS:%.cpp=obj/%.o)
 OBJ_DIR         = obj

@@ -2,9 +2,7 @@
 obj
 
 # Executables
-megaphone
-phonebook
-account
+zombie
 
 # Clangd LSP stuff
 .clangd
