@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/27 11:27:22 by dmusulas          #+#    #+#              #
-#    Updated: 2025/06/24 13:23:15 by dmusulas         ###   ########.fr        #
+#    Created: 2025/06/24 12:24:27 by dmusulas          #+#    #+#              #
+#    Updated: 2025/06/24 12:24:52 by dmusulas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME            = sad_sed
 MAKE            = make
 RM              = rm -rf
 
-SRCS            = main.cpp sad_sed.cpp test.cpp
+SRCS            = main.cpp
 
 OBJS            = $(SRCS:%.cpp=obj/%.o)
 OBJ_DIR         = obj
