@@ -6,17 +6,17 @@
 #    By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/24 12:24:27 by dmusulas          #+#    #+#              #
-#    Updated: 2025/06/24 12:24:52 by dmusulas         ###   ########.fr        #
+#    Updated: 2025/06/24 14:23:01 by dmusulas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CPP             = c++
 CPPFLAGS        = -Wall -Wextra -Werror -std=c++98
-NAME            = sad_sed
+NAME            = harl 
 MAKE            = make
 RM              = rm -rf
 
-SRCS            = main.cpp
+SRCS            = main.cpp Harl.cpp
 
 OBJS            = $(SRCS:%.cpp=obj/%.o)
 OBJ_DIR         = obj

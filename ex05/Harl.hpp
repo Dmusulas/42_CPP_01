@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sad_sed.hpp                                        :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmusulas <dmusulas@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:12:16 by dmusulas          #+#    #+#             */
-/*   Updated: 2025/06/24 13:56:50 by dmusulas         ###   ########.fr       */
+/*   Created: 2025/06/24 13:56:25 by dmusulas          #+#    #+#             */
+/*   Updated: 2025/06/24 14:21:01 by dmusulas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SAD_SED_HPP
-#define SAD_SED_HPP
+#ifndef HARL_HPP
+#define HARL_HPP
 
-#include <cstdlib>
-#include <cstring>
-#include <fstream>
 #include <iostream>
 #include <string>
+class Harl {
+private:
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
 
-bool validateInput(int argc, char **argv);
-bool replaceInLine(std::string &line, const std::string &searchString,
-                   const std::string &replaceString);
-bool readFile(const std::string &filename, const std::string &searchString,
-              const std::string &replaceString);
+public:
+    // Default constructor
+    Harl();
+    ~Harl();
+
+    void complain(const std::string &level);
+};
 
 #endif
